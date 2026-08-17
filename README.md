@@ -1,4 +1,4 @@
-# Ledger — teacher progress dashboard (web)
+# Smart Tutor — teacher progress dashboard (web)
 
 Next.js 14 (App Router) + TypeScript + Tailwind. Talks to your Django API.
 

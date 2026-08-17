@@ -17,8 +17,7 @@ export default function LoginPage() {
     setError(null);
     setLoading(true);
     try {
-      const { token } = await api.login(email, password);
-      localStorage.setItem("auth_token", token);
+      await api.login(email, password);
       router.push("/dashboard");
     } catch {
       setError("That email and password combination didn't work.");
@@ -30,7 +29,7 @@ export default function LoginPage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-paper px-4">
       <div className="w-full max-w-sm">
-        <p className="text-xs tracking-widest uppercase text-ink-soft mb-2">Ledger</p>
+        <p className="text-xs tracking-widest uppercase text-ink-soft mb-2">Smart Tutor</p>
         <h1 className="font-display text-3xl italic text-ink mb-8">
           See how class is going.
         </h1>

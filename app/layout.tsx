@@ -22,7 +22,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ledger — Student Progress",
+  title: "Smart Tutor — Student Progress",
   description: "Track how your students are actually doing.",
 };
 
