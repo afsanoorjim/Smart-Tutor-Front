@@ -8,7 +8,7 @@ export function Sidebar() {
     <aside className="w-56 shrink-0 border-r border-paper-line bg-paper px-5 py-8 flex flex-col justify-between">
       <div>
         <Link href="/dashboard" className="block font-display text-xl italic text-ink mb-10">
-          Smart Tutor
+          Ledger
         </Link>
         <nav className="space-y-1">
           <Link

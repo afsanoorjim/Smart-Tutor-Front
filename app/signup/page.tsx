@@ -29,7 +29,8 @@ export default function SignupPage() {
 
     setLoading(true);
     try {
-      await api.signup(name, email, password);
+      const { token } = await api.signup(name, email, password);
+      localStorage.setItem("auth_token", token);
       router.push("/dashboard");
     } catch {
       setError("Couldn't create that account. The email may already be in use.");
@@ -41,7 +42,7 @@ export default function SignupPage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-paper px-4">
       <div className="w-full max-w-sm">
-        <p className="text-xs tracking-widest uppercase text-ink-soft mb-2">Smart Tutor</p>
+        <p className="text-xs tracking-widest uppercase text-ink-soft mb-2">Ledger</p>
         <h1 className="font-display text-3xl italic text-ink mb-8">
           Set up your account.
         </h1>
